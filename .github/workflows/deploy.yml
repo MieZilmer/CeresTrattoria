@@ -18,7 +18,7 @@ jobs:
     - name: Deploy to Simply.com
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        username: ${{ secrets.FTP SERVER }}
+        username: ${{ secrets.FTP_SERVER }}
         password: ${{ secrets.FTP_USERNAME }}
         domain: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
