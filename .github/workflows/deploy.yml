@@ -1,9 +1,9 @@
-name: Deploy to Simply.com      
+name: Deploy to Simply.com
 
-on: 
+on:
   push:
     branches:
-      - main    
+      - main
 
 
 jobs:
@@ -14,12 +14,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-
     - name: Deploy to Simply.com
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        username: ${{ secrets.FTP_SERVER }}
-        password: ${{ secrets.FTP_USERNAME }}
-        domain: ${{ secrets.FTP_PASSWORD }}
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
         server-dir: cerestrattoria/
