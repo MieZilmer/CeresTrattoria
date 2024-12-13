@@ -1,87 +1,223 @@
-
 *{
     margin: 0;
     padding: 0;
 }
-        
-        /* Style the dropdown button */
-       nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #d1d152;
-            font-family: baskervile;
-            height: 5vh;
-            width: 100vw;
-            position: fixed;
-            top: 0;
-            z-index: 100;
-        }
 
-        .dropbtn {
-            padding: 1vh 2vw;
-            font-size: 1.5vh;
-            border: none;
-            cursor: pointer;
-            height: 5vh;
-            width: 15.96vw;
-            border: red 1px solid;
-        }
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
 
-        img
-        {
-            width: 5vh;
-            height: 5vh;
-        }
+/* ↓↓ Navbar ↓↓ */
+/* Selve navigationsbaren */
+nav {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #9f9fa1;
+    font-family: charter;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
 
-        #navlogo {
-            width: 5;
-            background-color: #bfbfbd;
-        }
+/* Logo i navigationsbaren */
+nav img {
+    height: 6.5vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 1vw;
+}
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
+/* boksen links ligger i, i navigationsbaren */
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    list-style: none;
+}
 
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #ffffff; /* Blue background */
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            border: #3a1717 1px solid;
-            z-index: 1;
-        }
+/* Links */
+.nav-links a {
+    padding: 0rem 2vw;
+    text-decoration: none; 
+    color: #000000;
+    font-size: 1.2vw;
+    display: inline-block; 
+    transition: transform 0.3s ease; 
+}
 
+.nav-links a:hover {
+    transform: scale(1.5);
+}
 
 
-        /* Links inside the dropdown */
-        .dropdown-content a {
-            color: rgb(0, 0, 0);
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
+/* ↓↓ dropdown meny ↓↓*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 9;
+}
 
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {background-color: hsl(157, 92%, 75%)}
+/* boksen links ligger i, i dropdownbaren */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 14vw;
+    background-color: #2a3478;
+    font-size: 2.2vh;
+}
 
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+/* Links i dropdownbaren */
+.dropdown-content a {
+    margin: 2.2vh 0; 
+    color: #fcba16;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2.4vh;
+}
 
-        /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown:hover .dropbtn {
-            background-color: #3e8e41;
-        }
+/* Gør dropdownmenuen synlig når man holder musen over et hovedmenupunkt */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-        /* Container for all dropdowns */
-        .dropdown-container {
-            width: 100vw;
-            height: 5vh;
-            display: flex;
-            background-color: #ffffff; /* Red background */
-        }
+/* Gør at billede ikke bliver vist på skærme over 768px*/
+#burger-menu-image {
+    display: none;
+}
+
+
+
+/* ↓↓ Main på index filen ↓↓ */
+.main-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 92vh;
+    width: 100%;
+    padding-top: 8vh;
+}
+
+.main-index section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.main-index aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.main-index aside h2{
+    font-size: 2.7vw;
+    text-align: center;
+    color: #000000;
+    font-family: charter;
+}
+
+.main-index aside h3{
+    font-size: 4vh;
+    text-align: center;
+    color: #000000;
+    font-family: charter;
+    margin: 3vh 0 0 0;
+    border: #ff9900 solid 3px;
+}
+
+.forside-billede {
+    height: auto;
+    width: 30vw;
+}
+
+
+/* ↓↓ Footer ↓↓ */
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #9f9fa1;
+    height: 35vh;
+    width: 100vw;
+}
+
+.footer div{
+   margin: 2vh;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
+
+.footer-links h1{
+    font-size: 2.7vh;
+    color: #000000;
+    font-family: charter;
+}
+
+.footer-links h2{
+    font-size: 2.7vh;
+    color: #000000;
+    font-family: charter;
+    margin-top: 2vh;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.6vw;
+    font-family: charter;
+}
+
+.footer-links p {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.6vw;
+    font-family: charter;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footer-social a img {
+    height: 4vh;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 3vh;
+    margin: 0 3vh 0 3vh;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.5);
+}
+
+.footer-logo img{
+    height: 25vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
