@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: baskervile;
 }
 
 /* ↓↓ Navbar ↓↓ */
@@ -54,122 +54,113 @@ nav img {
 }
 
 
-/* ↓↓ dropdown meny ↓↓*/
-.dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 9;
-}
-
-/* boksen links ligger i, i dropdownbaren */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 14vw;
-    background-color: #2a3478;
-    font-size: 2.2vh;
-}
-
-/* Links i dropdownbaren */
-.dropdown-content a {
-    margin: 2.2vh 0; 
-    color: #fcba16;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 2.4vh;
-}
-
-/* Gør dropdownmenuen synlig når man holder musen over et hovedmenupunkt */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Gør at billede ikke bliver vist på skærme over 768px*/
-#burger-menu-image {
-    display: none;
-}
-
-
-
 /* ↓↓ Main på index filen ↓↓ */
 .main-index{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 92vh;
-    width: 100%;
     padding-top: 8vh;
 }
 
-.main-index section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-
-.main-index aside{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-.main-index aside h2{
-    font-size: 2.7vw;
-    text-align: center;
-    color: #000000;
-    font-family: charter;
-}
-
-.main-index aside h3{
-    font-size: 4vh;
-    text-align: center;
-    color: #000000;
-    font-family: charter;
-    margin: 3vh 0 0 0;
-    border: #ff9900 solid 3px;
-}
-
-.forside-billede {
+ #top-billede{
+    margin-top: 5vh;
     height: auto;
-    width: 30vw;
+    width: 20vw;
 }
 
-.slider {
+
+
+
+
+
+
+
+
+
+/* teaser */
+.teaser {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
-    background-color: #ff9900;
+    width: 100vw;
+    margin-top: 10vh;
 }
 
-.card-list .card-item {
+.teaser ul {
+    display: flex;
+}
+
+.teaser-firkant {
     list-style: none;
 }
 
-.card-list .card-item .card-link {
-    width: 400px;
+.teaser-link {
+    width: 300px;
     display: block;
-    background: #fff;
+    background: #ffffff;
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
+    border: 2px solid #ff9900;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2 ease;
+    margin: 10px;
+}
+.teaser-link:hover {
+    border-color: black;
 }
 
-
-.card-list .card-link .card-image {
+.teaser-billede {
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 10px;
 }
+
+.navn {
+    color: rgb(0, 0, 0);
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background: #ffffff;
+    width: fit-content;
+    border-radius: 50px;
+    border: 2px solid #ff9900;
+}
+.teaser-link h2{
+    font-size: 1rem;
+    color: #a60404;
+}
+
+
+.teaser-button {
+    height: 35px;
+    width: 35px;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #ff9900;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.teaser-firkant .teaser-link:hover .teaser-button {
+    color: #fff;
+    background: #ff9900;
+}
+
+
+
+
+
+
+
+
 
 
 /* ↓↓ Footer ↓↓ */
@@ -182,37 +173,6 @@ nav img {
     height: 35vh;
     width: 100vw;
 }
-
-.card-list .card-link .badge {
-    color: aquamarine;
-    padding: 8px 16px;
-    font-size: 0.95rem;
-    font-weight: 500;
-    margin: 16px 0 18px;
-    background: #2a3478;
-    width: fit-content;
-    border-radius: 50px;
-}
-
-.card-list .card-link .card-title {
-    font-size: 1.19rem;
-    color: #000000;
-    font-weight: 600;
-}
-
-.card-list .card-link .card-button {
-    height: 35px;
-    width: 35px;
-    color: rgb(255, 0, 98);
-    border-radius: 50%;
-    margin: 30px 0 5px;
-    background: none;
-    cursor: pointer;
-    border: 2px solid rgb(255, 0, 98);
-    transform: rotate(-45deg);
-}
-
-
 
 .footer div{
    margin: 2vh;
