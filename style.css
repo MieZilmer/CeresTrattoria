@@ -4,7 +4,22 @@
 }
 
 body {
-    font-family: baskervile;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#loading-screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    display: none; 
+}
+
+#loading-screen img {
+    width: 30vh;
 }
 
 /* ↓↓ Navbar ↓↓ */
@@ -13,9 +28,9 @@ nav {
     display: flex; 
     justify-content: center;
     align-items: center;
-    background-color: #9f9fa1;
+    background-color: #D2C9BE;
     font-family: charter;
-    height: 8vh;
+    height: 10vh;
     width: 100vw;
     position: fixed;
     top: 0;
@@ -24,7 +39,7 @@ nav {
 
 /* Logo i navigationsbaren */
 nav img {
-    height: 6.5vh;
+    height: 7.9vh;
     width: auto;
     display: flex;
     align-items: center;
@@ -44,7 +59,7 @@ nav img {
     padding: 0rem 2vw;
     text-decoration: none; 
     color: #000000;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     display: inline-block; 
     transition: transform 0.3s ease; 
 }
@@ -53,6 +68,9 @@ nav img {
     transform: scale(1.5);
 }
 
+main {
+    margin-top: 10vh;
+}
 
 /* ↓↓ Main på index filen ↓↓ */
 .main-index{
@@ -60,7 +78,8 @@ nav img {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-top: 8vh;
+    margin-top: -2vh;
+    background-color: #1c1c1c;
 }
 
  #top-billede{
@@ -68,14 +87,6 @@ nav img {
     height: auto;
     width: 20vw;
 }
-
-
-
-
-
-
-
-
 
 
 /* teaser */
@@ -86,10 +97,12 @@ nav img {
     align-items: center;
     width: 100vw;
     margin-top: 10vh;
+
 }
 
 .teaser ul {
     display: flex;
+    
 }
 
 .teaser-firkant {
@@ -99,17 +112,13 @@ nav img {
 .teaser-link {
     width: 300px;
     display: block;
-    background: #ffffff;
+    background: #1c1c1c;
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
-    border: 2px solid #ff9900;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
     transition: 0.2 ease;
     margin: 10px;
-}
-.teaser-link:hover {
-    border-color: black;
+    border: #D2C9BE 2px solid;
 }
 
 .teaser-billede {
@@ -120,46 +129,83 @@ nav img {
 }
 
 .navn {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 8px 16px;
     font-size: 1rem;
     font-weight: 500;
     margin: 16px 0 18px;
-    background: #ffffff;
+    background: #1c1c1c;
     width: fit-content;
     border-radius: 50px;
-    border: 2px solid #ff9900;
+    border: 2px solid #D2C9BE;
 }
 .teaser-link h2{
     font-size: 1rem;
-    color: #a60404;
+    color: #ffffff;
 }
 
+.teaser-link div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 .teaser-button {
     height: 35px;
     width: 35px;
-    color: rgb(0, 0, 0);
+    color: #D2C9BE;
     border-radius: 50%;
     margin: 30px 0 5px;
     background: none;
-    cursor: pointer;
-    border: 2px solid #ff9900;
+    border: 2px solid #D2C9BE;
     transform: rotate(-45deg);
-    transition: 0.4s ease;
+    transition: 0.5s ease;
 }
 
 .teaser-firkant .teaser-link:hover .teaser-button {
     color: #fff;
-    background: #ff9900;
+    background: #D2C9BE;
+}
+
+.menu {
+margin-top: 3vh;
+color: #D2C9BE;
 }
 
 
 
+.main-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8vh;
+    background-color: #1c1c1c;
+}
 
+.scroll {
+    height: 35px;
+    width: 35px;
+    color: #D2C9BE;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    border: 2px solid #D2C9BE;
+    transform: rotate(-90deg);
+    transition: 0.5s ease;
+}
 
+.scroll:hover {
+    color: #1c1c1c;
+    background: #D2C9BE;
+}
 
-
+.main-menu p {
+    color: #D2C9BE;
+    font-size: 1.5vw;
+    font-family: charter;
+    margin-top: 2vh;
+}
 
 
 
@@ -169,7 +215,7 @@ nav img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #9f9fa1;
+    background-color: #1c1c1c;
     height: 35vh;
     width: 100vw;
 }
@@ -189,27 +235,27 @@ nav img {
 
 .footer-links h1{
     font-size: 2.7vh;
-    color: #000000;
-    font-family: charter;
-}
-
-.footer-links h2{
-    font-size: 2.7vh;
-    color: #000000;
+    color: #D2C9BE;
     font-family: charter;
     margin-top: 2vh;
 }
 
+.footer-links h2{
+    font-size: 2.7vh;
+    color: #D2C9BE;
+    font-family: charter;
+}
+
 .footer-links a {
     text-decoration: none;
-    color: #000000;
+    color: #D2C9BE;
     font-size: 1.6vw;
     font-family: charter;
 }
 
 .footer-links p {
     text-decoration: none;
-    color: #000000;
+    color: #D2C9BE;
     font-size: 1.6vw;
     font-family: charter;
 }
