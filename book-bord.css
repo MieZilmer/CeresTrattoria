@@ -1,0 +1,104 @@
+.book-bord {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.book-bord h1 {
+font-size: 5vh;
+margin-bottom: 7vh;
+}
+
+.nummer {
+height: 100px;
+width: 100px;
+margin: 10px;
+font-size: 3vh;
+color: #1c1c1c;
+border-radius: 50%;
+background: #D2C9BE;
+border: 2px solid #D2C9BE;
+transition: 0.5s ease;
+}
+
+.nummer:hover {
+color: #fff;
+background: #D2C9BE;
+}
+
+#dato {
+margin: 10px;
+font-size: 3vh;
+background: #D2C9BE;
+border: 2px solid #D2C9BE;
+color: rgb(0, 0, 0);
+padding: 8px 16px;
+font-size: 1rem;
+border-radius: 50px;
+}
+
+#time-buttons {
+ display: grid;
+ grid-template-columns: repeat(7, 1fr);
+ gap: 10px;
+}
+
+.tid {
+ height: 70px;
+ width: 70px;
+ font-size: 2vh;
+ color: #1c1c1c;
+ border-radius: 50%;
+ background: #D2C9BE;
+ border: 2px solid #D2C9BE;
+ transition: 0.5s ease;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+
+.tid:hover {
+ color: #fff;
+ background: #D2C9BE;
+}
+
+.row {
+ margin: 10px;
+ font-size: 3vh;
+ background: #D2C9BE;
+ border: 2px solid #D2C9BE;
+ color: rgb(0, 0, 0);
+ padding: 8px 16px;
+ font-size: 1rem;
+ border-radius: 50px;
+ }
+
+ #kontakt-info {
+  margin-top: 20px;
+}
+
+#kontakt-info h1 {
+  font-size: 2.5vh;
+  color: #1c1c1c;
+  margin-bottom: 20px;
+}
+
+#kontakt-info .row {
+  margin-bottom: 15px;
+}
+
+#kontakt-info input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.5vh;
+  border: 2px solid #D2C9BE;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#kontakt-info input[type="text"]::placeholder {
+  color: #1c1c1c;
+  opacity: 0.7;
+}
