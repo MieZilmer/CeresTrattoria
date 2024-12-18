@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 #loading-screen {
@@ -29,7 +29,6 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: #D2C9BE;
-    font-family: charter;
     height: 10vh;
     width: 100vw;
     position: fixed;
@@ -207,6 +206,9 @@ color: #D2C9BE;
     margin-top: 2vh;
 }
 
+.main-om-os img {
+width: 100%;
+}
 
 
 /* ↓↓ Footer ↓↓ */
@@ -234,30 +236,21 @@ color: #D2C9BE;
 }
 
 .footer-links h1{
-    font-size: 2.7vh;
+    font-size: 2.3vh;
     color: #D2C9BE;
-    font-family: charter;
     margin-top: 2vh;
-}
-
-.footer-links h2{
-    font-size: 2.7vh;
-    color: #D2C9BE;
-    font-family: charter;
 }
 
 .footer-links a {
     text-decoration: none;
     color: #D2C9BE;
-    font-size: 1.6vw;
-    font-family: charter;
+    font-size: 1.3vw;
 }
 
 .footer-links p {
     text-decoration: none;
     color: #D2C9BE;
-    font-size: 1.6vw;
-    font-family: charter;
+    font-size: 1.3vw;
 }
 
 .footer-social {

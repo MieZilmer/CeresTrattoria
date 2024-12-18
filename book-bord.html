@@ -36,31 +36,26 @@
             </ul>
         </nav>
     </header>
-
-
-
-
-
-
-
     <main>
         <div class="book-bord">
-            <h1>Hvor mange bliver i?</h1>
-            <section class="antal">
-                <button class="nummer">1</button>
-                <button class="nummer">2</button>
-                <button class="nummer">3</button>
-                <button class="nummer">4</button>
+            <section class="antal" id="antal-section">
+                <h1>Hvor mange bliver i?</h1>
+                <div>
+                    <button class="nummer" onclick="showWhenSection()">1</button>
+                    <button class="nummer" onclick="showWhenSection()">2</button>
+                    <button class="nummer" onclick="showWhenSection()">3</button>
+                    <button class="nummer" onclick="showWhenSection()">4</button>
+                </div>
+                <div>
+                    <button class="nummer" onclick="showWhenSection()">5</button>
+                    <button class="nummer" onclick="showWhenSection()">6</button>
+                    <button class="nummer" onclick="showWhenSection()">7</button>
+                    <button class="nummer" onclick="showWhenSection()">8</button>
+                </div>
             </section>
-            <section>
-                <button class="nummer">5</button>
-                <button class="nummer">6</button>
-                <button class="nummer">7</button>
-                <button class="nummer">8</button>
-            </section>
-            <section>
+            <section class="when" id="when-section" style="display: none;">
                 <h1>Hvornår kommer i?</h1>
-                <select id="dato" name="måned" required>
+                <select class="dato" name="måned" required>
                     <option value="" disabled selected hidden>Måned</option>
                     <option value="2024-12">December 2024</option>
                     <option value="2025-01">January 2025</option>
@@ -76,87 +71,58 @@
                     <option value="2025-11">November 2025</option>
                     <option value="2025-12">December 2025</option>
                 </select>
-        
-                <select id="dato" name="dag" required>
+                <select class="dato" name="dag" required>
                     <option value="" disabled selected hidden>Dag</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                    <option value="13">13</option>
-                    <option value="14">14</option>
-                    <option value="15">15</option>
-                    <option value="16">16</option>
-                    <option value="17">17</option>
-                    <option value="18">18</option>
-                    <option value="19">19</option>
-                    <option value="20">20</option>
-                    <option value="21">21</option>
-                    <option value="22">22</option>
-                    <option value="23">23</option>
-                    <option value="24">24</option>
-                    <option value="25">25</option>
-                    <option value="26">26</option>
-                    <option value="27">27</option>
-                    <option value="28">28</option>
-                    <option value="29">29</option>
-                    <option value="30">30</option>
-                    <option value="31">31</option>
                 </select>
                 <section id="time-buttons">
-                    <button class="tid">11:00</button>
-                    <button class="tid">11:30</button>
-                    <button class="tid">12:00</button>
-                    <button class="tid">12:30</button>
-                    <button class="tid">13:00</button>
-                    <button class="tid">13:30</button>
-                    <button class="tid">14:00</button>
-                    <button class="tid">14:30</button>
-                    <button class="tid">15:00</button>
-                    <button class="tid">15:30</button>
-                    <button class="tid">16:00</button>
-                    <button class="tid">16:30</button>
-                    <button class="tid">17:00</button>
-                    <button class="tid">17:30</button>
-                    <button class="tid">18:00</button>
-                    <button class="tid">18:30</button>
-                    <button class="tid">19:00</button>
-                    <button class="tid">19:30</button>
-                    <button class="tid">20:00</button>
-                    <button class="tid">20:30</button>
-                    <button class="tid">21:00</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">11:00</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">11:30</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">12:00</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">12:30</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">13:00</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">13:30</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">14:00</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">14:30</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">15:00</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">15:30</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">16:00</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">16:30</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">17:00</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">17:30</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">18:00</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">18:30</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">19:00</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">19:30</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">20:00</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">20:30</button>
+                    <button class="tid" onclick="showKontaktInfoSection()">21:00</button>
                 </section>
-                <section id="kontakt-info">
+            </section>
+            <section class="kontakt-info" id="kontakt-info-section" style="display: none;">
+                <div>
                     <h1>Kontak information</h1>
-                    <div class="row">
-                      <input type="text" id="fornavn" name="fornavn" placeholder="Navn" required>
-                    </div>
-                    <div class="row">
-                      <input type="text" id="efternavn" name="efternavn" placeholder="Tlf." required>
-                    </div>
-                    <div class="row">
-                      <input type="text" id="adresse" name="adresse" placeholder="Email" required>
-                    </div>
-                    <div class="row">
-                      <input type="text" id="postnummer" name="postnummer" placeholder="kommentar" required>
-                    </div>
-                  </section>
+                    <input type="text" placeholder="Navn" required>
+                    <input type="text" placeholder="Tlf." required>
+                    <input type="text" placeholder="Email" required>
+                    <input type="text" placeholder="kommentar" required id="kommentar">
+                    <button onclick="showTakSection()">Næste</button>
+                </div>
+            </section>
+            <section class="tak" id="tak-section" style="display: none;">
+                <h1>! Tak for din bestilling !</h1>
+                <h3>vi glæder os til at se dig</h3>
+                <p>Bekræftelse sendt på mail med dato og tid</p>
+                <a href="index.html">Tilbage</a>
             </section>
         </div>
     </main>
 
+
+
     <footer>
         <div class="footer">
             <div class="footer-links">
-                <h2>Åbningstider</h2>
+                <h1>Åbningstider</h1>
                 <p>Tirsdag - Søndag:</p>
                 <p>11:00 - 21:30</p>
                 <h1>Kontakt</h1>
@@ -184,7 +150,7 @@
             </div>
         </div>
     </footer>
-
     <script src="loading-gif.js"></script>
+    <script src="book-bord.js"></script>
 </body>
 </html>
