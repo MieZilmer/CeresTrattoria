@@ -18,6 +18,7 @@ font-size: 4vh;
 margin-bottom: 7vh;
 display: flex;
 justify-content: center;
+color: #D2C9BE;
 }
 
 .nummer {
@@ -33,7 +34,7 @@ transition: 0.5s ease;
 }
 
 .nummer:hover {
-color: #fff;
+color: #f07a27;
 background: #D2C9BE;
 }
 
@@ -71,7 +72,7 @@ border-radius: 50px;
 }
 
 .tid:hover {
- color: #fff;
+  color: #f07a27;
  background: #D2C9BE;
 }
 
@@ -88,6 +89,7 @@ border-radius: 50px;
   font-size: 1.5vh;
   border: 2px solid #D2C9BE;
   border-radius: 5px;
+  background-color: #D2C9BE;
 }
 
 #kommentar {
@@ -110,6 +112,10 @@ border-radius: 50px;
   border-radius: 50px;
   }
 
+  .kontakt-info input::placeholder {
+    color: #1c1c1c; 
+}
+  
 .tak {
   display: flex;
   flex-direction: column;
@@ -122,6 +128,7 @@ border-radius: 50px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #D2C9BE;
   }
 
 .tak p {
@@ -130,6 +137,7 @@ border-radius: 50px;
   justify-content: center;
   align-items: center;
   margin-top: 1vh;
+  color: #D2C9BE;
   }
 
   .tak a {
