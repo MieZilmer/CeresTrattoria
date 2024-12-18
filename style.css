@@ -7,6 +7,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+main{
+    background-color: #1c1c1c;
+}
+
 #loading-screen {
     width: 100vw;
     height: 100vh;
@@ -210,6 +214,23 @@ color: #D2C9BE;
 width: 100%;
 }
 
+.main-om-os h1 {
+    color: #D2C9BE;
+    font-size: 2.5vw;
+    margin-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-om-os p {
+    color: #D2C9BE;
+    font-size: 1.5vw;
+    margin-top: 5vh;
+    padding: 0 5vw 0 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ↓↓ Footer ↓↓ */
 .footer{
