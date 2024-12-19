@@ -10,6 +10,7 @@ body {
 main{
     background-color: #1c1c1c;
     height: auto;
+    margin-top: 10vh;
 }
 
 #loading-screen {
@@ -72,19 +73,16 @@ nav img {
     transform: scale(1.5);
 }
 
-main {
-    margin-top: 10vh;
-}
-
 /* ↓↓ Main på index filen ↓↓ */
 .main-index{
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-top: -2vh;
     background-color: #1c1c1c;
-    height: 92vh;
+
 }
 
  #top-billede{
@@ -178,6 +176,7 @@ color: #D2C9BE;
 }
 
 .main-menu{
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -239,7 +238,7 @@ width: 100%;
 
 /* ↓↓ Take away html filen ↓↓ */
 .main-take-away {
-    height: 92vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
