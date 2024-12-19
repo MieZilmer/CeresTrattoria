@@ -1,3 +1,4 @@
+/* ↓↓ book bord hele siden ↓↓ */
 .book-bord {
 display: flex;
 flex-direction: row;
@@ -6,29 +7,31 @@ align-items: center;
 height: 92vh;
 }
 
-.antal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  }
-
+/* ↓↓ Alle h1 har samme værdier på denne side ↓↓ */
 .book-bord h1 {
-font-size: 4vh;
-margin-bottom: 7vh;
-display: flex;
-justify-content: center;
-color: #D2C9BE;
+  font-size: 4vh;
+  margin-bottom: 7vh;
+  display: flex;
+  justify-content: center;
+  color: #D2C9BE;
 }
 
+/* ↓↓ Alle p har samme værdier på denne side ↓↓ */
 .book-bord p {
   color: #D2C9BE;
   font-size: 1.5vw;
   margin-top: 5vh;
   padding: 0 5vw 0 5vw;
   display: flex;
-justify-content: center;
+  justify-content: center;
 }
+
+.antal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
 
 .nummer {
 height: 100px;

@@ -1,3 +1,4 @@
+"use strict";
 
 function showWhenSection() {
     document.getElementById('antal-section').style.display = 'none';

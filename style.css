@@ -93,7 +93,7 @@ main {
 }
 
 
-/* teaser */
+/* ↓↓ Teaser ↓↓ */
 .teaser {
     display: flex;
     flex-direction: column;
@@ -170,12 +170,11 @@ main {
     background: #D2C9BE;
 }
 
+/* ↓↓ Menu html filen ↓↓ */
 .menu {
 margin-top: 3vh;
 color: #D2C9BE;
 }
-
-
 
 .main-menu{
     display: flex;
@@ -210,6 +209,8 @@ color: #D2C9BE;
     margin-top: 2vh;
 }
 
+
+/* ↓↓ Om os html filen ↓↓ */
 .main-om-os img {
 width: 100%;
 }
@@ -229,6 +230,8 @@ width: 100%;
     padding: 0 5vw 0 5vw;
 }
 
+
+/* ↓↓ Take away html filen ↓↓ */
 .main-take-away {
     height: 92vh;
     display: flex;
