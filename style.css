@@ -9,7 +9,7 @@ body {
 
 main{
     background-color: #1c1c1c;
-    height: 100vh;
+    height: auto;
 }
 
 #loading-screen {
@@ -212,6 +212,11 @@ color: #D2C9BE;
 
 
 /* ↓↓ Om os html filen ↓↓ */
+
+.main-om-os {
+    height: auto;
+}
+
 .main-om-os img {
 width: 100%;
 }
@@ -239,6 +244,7 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .main-take-away h1 {
@@ -251,7 +257,7 @@ width: 100%;
 }
 
 .main-take-away img {
-    width: 30%;
+    width: 20%;
 }
 
 .main-take-away a {
