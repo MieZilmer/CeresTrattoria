@@ -171,17 +171,14 @@ main {
 }
 
 /* ↓↓ Menu html filen ↓↓ */
-.menu {
-margin-top: 3vh;
-color: #D2C9BE;
-}
+
 
 .main-menu{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 8vh;
+    margin-top: 10vh;
     background-color: #1c1c1c;
 }
 
@@ -250,7 +247,7 @@ width: 100%;
 }
 
 .main-take-away img {
-    width: 40%;
+    width: 30%;
 }
 
 .main-take-away a {
