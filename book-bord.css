@@ -21,6 +21,15 @@ justify-content: center;
 color: #D2C9BE;
 }
 
+.book-bord p {
+  color: #D2C9BE;
+  font-size: 1.5vw;
+  margin-top: 5vh;
+  padding: 0 5vw 0 5vw;
+  display: flex;
+justify-content: center;
+}
+
 .nummer {
 height: 100px;
 width: 100px;
