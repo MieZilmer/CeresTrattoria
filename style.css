@@ -171,7 +171,10 @@ main {
 }
 
 /* ↓↓ Menu html filen ↓↓ */
-
+.menu {
+margin-top: 3vh;
+color: #D2C9BE;
+}
 
 .main-menu{
     display: flex;

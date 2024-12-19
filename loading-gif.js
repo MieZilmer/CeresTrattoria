@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
              loadingScreen.style.display = "flex";
              setTimeout(() => {
                  window.location.href = link.href;
-             }, 1700);
+             }, 1300);
          }
      });
  });
