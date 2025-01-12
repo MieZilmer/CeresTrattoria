@@ -1,9 +1,12 @@
 /* ↓↓ book bord hele siden ↓↓ */
+
+
 .book-bord {
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
+height: auto;
 height: 92vh;
 }
 
@@ -14,16 +17,18 @@ height: 92vh;
   display: flex;
   justify-content: center;
   color: #D2C9BE;
+  text-align: center;
 }
 
 /* ↓↓ Alle p har samme værdier på denne side ↓↓ */
 .book-bord p {
   color: #D2C9BE;
-  font-size: 1.5vw;
+  font-size: 3vw;
   margin-top: 5vh;
   padding: 0 5vw 0 5vw;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .antal {
@@ -62,7 +67,7 @@ border-radius: 50px;
 
 #time-buttons {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
   justify-content: center;
   align-items: center;
@@ -141,6 +146,9 @@ border-radius: 50px;
   justify-content: center;
   align-items: center;
   color: #D2C9BE;
+  font-size: 4vw;
+  text-align: center;
+  margin-top: 5vh;
   }
 
 .tak p {
@@ -150,10 +158,12 @@ border-radius: 50px;
   align-items: center;
   margin-top: 1vh;
   color: #D2C9BE;
+  font-size: 3vh;
+  margin-top: 5vh;
   }
 
   .tak a {
-    margin-top: 3vh;
+    margin-top: 5vh;
     background: #D2C9BE;
     border: 2px solid #D2C9BE;
     color: rgb(0, 0, 0);
@@ -165,3 +175,187 @@ border-radius: 50px;
     justify-content: center;
     align-items: center;
     }
+
+
+
+    @media screen and (max-width: 1180px) {
+      /* ↓↓ book bord hele siden ↓↓ */
+.book-bord {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 102vh;
+  margin: -15vh 5vw 0 5vw;
+  }
+  
+  /* ↓↓ Alle h1 har samme værdier på denne side ↓↓ */
+  .book-bord h1 {
+    font-size: 3.8vh;
+    margin-bottom: 7vh;
+    display: flex;
+    justify-content: center;
+    color: #D2C9BE;
+    text-align: center;
+  }
+  
+  /* ↓↓ Alle p har samme værdier på denne side ↓↓ */
+  .book-bord p {
+    color: #D2C9BE;
+    font-size: 4vw;
+    margin-top: 5vh;
+    padding: 0 5vw 0 5vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+  }
+  
+  .antal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+  
+  .nummer {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  font-size: 3vh;
+  color: #1c1c1c;
+  border-radius: 50%;
+  background: #D2C9BE;
+  border: 2px solid #D2C9BE;
+  transition: 0.5s ease;
+  }
+  
+  .nummer:hover {
+  color: #f07a27;
+  background: #D2C9BE;
+  }
+  
+  .dato {
+  margin-bottom: 3vh;
+  background: #D2C9BE;
+  border: 2px solid #D2C9BE;
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 50px;
+  }
+  
+  #time-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tid {
+    height: 50px;
+    width: 50px;
+    font-size: 2vh;
+    color: #1c1c1c;
+    border-radius: 50%;
+    background: #D2C9BE;
+    border: 2px solid #D2C9BE;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; 
+  }
+  
+  .tid:hover {
+    color: #f07a27;
+   background: #D2C9BE;
+  }
+  
+  .kontakt-info div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .kontakt-info input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 10px 0 10px;
+    font-size: 1.5vh;
+    border: 2px solid #D2C9BE;
+    border-radius: 5px;
+    background-color: #D2C9BE;
+  }
+  
+  #kommentar {
+    width: 100%;
+    height: 5vh;
+    padding: 10px;
+    font-size: 1.5vh;
+    border: 2px solid #D2C9BE;
+    border-radius: 5px;
+  }
+  
+  .kontakt-info button {
+    width: 100%;
+    margin-top: 3vh;
+    background: #D2C9BE;
+    border: 2px solid #D2C9BE;
+    color: rgb(0, 0, 0);
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 50px;
+    }
+  
+    .kontakt-info input::placeholder {
+      color: #1c1c1c; 
+  }
+    
+  .tak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+  
+  .tak h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #D2C9BE;
+    margin-top: 5vh;
+    }
+  
+  .tak p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    color: #D2C9BE;
+    margin-top: 5vh;
+    }
+  
+    .tak a {
+      margin-top: 3vh;
+      background: #D2C9BE;
+      border: 2px solid #D2C9BE;
+      color: rgb(0, 0, 0);
+      padding: 8px 16px;
+      font-size: 1rem;
+      border-radius: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5vh;
+      }
+    }
+
+
+
+
